@@ -132,7 +132,7 @@ th, td {
     align-items: center;
     flex: 1;
     padding: 0 20px;
-    background-color: rgb(244, 230, 203);
+    background-color: #F1D4B0 /* rgb(244, 230, 203) */;
 }
 
 .header-img {
@@ -270,6 +270,22 @@ th, td {
 
 /* fin de producto */
 
+/* video */
+
+video {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100%;
+    height: 400px;
+    /* height: auto; */
+    display: block;
+    object-fit: cover;
+}
+
+/* fin de video */
+
 /* iconos */
 
 .icons {
@@ -285,6 +301,7 @@ th, td {
     justify-content: space-between;
     padding: 25px;
     background-color: #F5F5F5;
+    border-radius: 5px;
 }
 
 .icon-txt h3 {
@@ -295,8 +312,13 @@ th, td {
 }
 
 .icon-txt p {
-    font-size: 16px;
+    font-size: 12px;
     color: #111111;
+}
+
+.icon-info{
+    width: 50px;
+    height: 50px;
 }
 
 /* fin de iconos */
@@ -511,12 +533,70 @@ th, td {
 
 
 /* nav */
-.menu .navbar ul li a:hover{
-    background-color: rgba(224, 154, 195, 0.677)/* rgb(61, 190, 208) */;
-    color: white;
+/* .menu .navbar ul li a:hover{
+    background-color: rgb(250, 193, 145);
     border-radius: 5px;
+} */
+
+.menu .navbar ul li a {
+    position: relative;
+    text-decoration: none; /* Quita cualquier subrayado predeterminado */
 }
+
+.menu .navbar ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Ajusta el grosor de la línea */
+    background-color: #000; /* Cambia el color según desees */
+    transition: width 0.3s ease-in-out; /* Efecto de animación */
+}
+
+.menu .navbar ul li a:hover::after {
+    width: 100%; /* La línea aparece completamente al pasar el mouse */
+}
+
 /* fin de nav */
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.search-container .search-btn {
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.lupa{
+    width: 18px;
+    height: 15px;
+}
+
+.search-container .search-btn:hover {
+    background-color: #CAD9FB;
+}
+
+
 
 .fondo-model{
     height: 550px;

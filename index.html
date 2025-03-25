@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head><!-- main -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T-Line</title>
@@ -18,7 +18,7 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <!-- <li><a href="#">Servicios</a></li> -->
                     <li><a href="#">Productos</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
@@ -28,25 +28,15 @@
             <div class="search">
                 <!-- <label for="options">¿Qué estás buscando?</label> -->
                  
-                <select class="optionClass" name="options" id="options" onchange="filtrarPorCategoria()">
-                    <option value="" selected hidden>Filtrar...</option>
-                    <!-- <option value="todo">Todo</option> -->
-                    <optgroup label="Verano">
-                        <option value="Remera">Remera</option>
-                        <option value="Musculosa">Musculosa</option>
-                        <option value="Pantalon">Pantalon</option>
-                        <option value="Short">Short</option>
-                    </optgroup>
-                    <optgroup label="Invierno">
-                        <option value="Campera">Campera</option>
-                        <option value="Buzo">Buzo</option>
-                    </optgroup>
-                    <optgroup label="Calzado">
-                        <option value="zapatillas">Zapatillas</option>
-                        <option value="zapatos">Zapatos</option>
-                        <option value="sandalias">Sandalias</option>
-                    </optgroup>
-                </select>
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchBar" 
+                        placeholder="Buscar..." 
+                        onkeyup="filtrarPorTexto()" />
+                    <button class="search-btn"><img class="lupa" src="/Img/lupa.png" alt="">
+                    </button>
+                </div>
             </div>
             
 
@@ -206,42 +196,57 @@
 </div>
  <!-- fin de paginacion -->
 
+<!-- video -->
 
+<video src="/video/tienda-1.mp4" autoplay muted loop playsinline></video>
+
+<!-- fin de video -->
 
      <section class="icons conteiner">
 
         <div class="icon-1">
             <div class="icon-img">
-                <img src="Img/i1.svg" alt="">
+                <img class="icon-info" src="Img/pago.png" alt="">
             </div>
             <div class="icon-txt">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>Financiación.</h3>
+                <p>Hasta 6 cuotas sin interes con tarjeta</p>
             </div>
         </div>
 
         <div class="icon-1">
             <div class="icon-img">
-                <img src="Img/i2.svg" alt="">
+                <img class="icon-info" src="Img/me-gusta.png" alt="">
             </div>
             <div class="icon-txt">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>Comprá con tranquilidad</h3>
+                <p>Devolución hasta 30 días de la compra.</p>
             </div>
         </div>
 
         <div class="icon-1">
             <div class="icon-img">
-                <img src="Img/i3.svg" alt="">
+                <img class="icon-info" src="Img/whatsapp.png" alt="">
             </div>
             <div class="icon-txt">
-                <h3>Lorem ipsum dolor sit.</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>¿Dudas o consultas?</h3>
+                <p>Envianos un Whatsapp (clic aquí)</p>
             </div>
         </div>
      </section>
 
      <footer class="footer">
+        <!-- Nosotros
+¿Quienes Somos?
+Contacto
+
+Ayuda
+Política de cambios y devoluciones
+¿Cómo Comprar?
+
+Contactános
+ecommerce@laargentina.com
+25 de Mayo 431 - San Miguel de Tucumán - Tucumán -->
         <div class="footer-content container">
             <div class="link">
                 <h3>loren</h3>
