@@ -87,7 +87,8 @@ img{
 }
 
 .subMenu {
-    position: relative;
+    min-width: 100%;
+    /* position: relative; */
 }
 
 .subMenu #carrito {
@@ -179,7 +180,7 @@ th, td {
 .ofert-1 {
     display: flex;
     align-items: center;
-    flex-basis: calc(33.3% - 15px); /* ocuparan tres objetos la totalidad del ancho. el 15px es el espacio en blanco entre cada oferta */
+    flex-basis: calc(33.3% - 15px); /* flex-basis: calc(30% - 15px); */ /* ocuparan tres objetos la totalidad del ancho. el 15px es el espacio en blanco entre cada oferta */
     background-color: #F5F5F5;
     padding: 35px;
 }
@@ -187,11 +188,12 @@ th, td {
 .ofert-img {
     flex-basis: 50%;
     margin-right: 15px;
+    /* aqui puedo hacer circular la imagen */
 }
 
-.ofert-img img {
+/* .ofert-img img {
     width: 250px;
-}
+} */
 
 .ofert-txt {
     flex: 50%;
@@ -275,10 +277,10 @@ th, td {
 video {
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
     width: 100%;
     height: 400px;
+    padding-left: 15px;
+    padding-right: 15px;
     /* height: auto; */
     display: block;
     object-fit: cover;
@@ -609,4 +611,13 @@ video {
 
 option{
     background-color: #F5F5F5;
+}
+
+#ofert-verMas{
+    margin: 20px;
+    width: 70px;
+    height: 70xp;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
